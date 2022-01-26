@@ -1,7 +1,7 @@
 import sys
 import zmq
 
-topic = "book/novel/1"
+topic = "book/comic/gintama"
 
 #ZeroMQのバックグラウンド・スレッドのコンテキスト
 context = zmq.Context()

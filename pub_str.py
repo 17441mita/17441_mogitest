@@ -14,9 +14,9 @@ while True:
 
     for topic in range(1,4):
         data = topic * i
-        socket.send_string("{0} {1}".format("book/comic/"+str(topic),data))
-        print("Topic {0} <- {1} sent".format("book/comic/",data))
-        socket.send_string("{0} {1}".format("book/novel/"+str(topic),data))
-        print("Topic {0} <- {1} sent".format("book/novel/",data))
-
+        socket.send_string("{0} {1}".format("book/comic/kimetsu/"+str(topic), data))
+        print("Topic {0} <- {1} sent".format("book/comic/kimetsu/", data))
+        socket.send_string("{0} {1}".format("book/comic/gintama/"+str(topic), data))
+        print("Topic {0} <- {1} sent".format("book/comic/gintama/", data))
+    
     time.sleep(1)
